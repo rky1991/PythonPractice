@@ -1,0 +1,47 @@
+{
+  "configKey": "DualControlSettings",
+  "configValue": {
+    "dualControlConfig": [
+      {
+        "action": "dualControl",
+        "incoming": false,
+        "outgoing": true
+      },
+      {
+        "action": "dualControlVerificationRequired",
+        "incoming": false,
+        "outgoing": false
+      },
+      {
+        "action": "dualControlAmountVerification",
+        "incoming": false,
+        "outgoing": true
+      },
+      {
+        "action": "dualControlRoutingNumberVerification",
+        "incoming": false,
+        "outgoing": false
+      }
+    ],
+    "roleSettings": [
+      {
+        "role": "Default",
+        "outgoingWireDualControlRequired": true,
+        "outgoingWireDualControlAmount": "60.00"
+      },
+      {
+        "role": "WireApprover",
+        "outgoingWireDualControlRequired": true,
+        "outgoingWireDualControlAmount": "100.00"
+      }
+    ],
+    "incomingWireRoleLimit": [
+      {
+        "role": "Default",
+        "incomingWireDualControlRequired": true,
+        "incomingWireDualControlAmount": "0.00"
+      }
+    ]
+  }
+}
+
