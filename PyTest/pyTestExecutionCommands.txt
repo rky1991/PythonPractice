@@ -36,3 +36,10 @@ pytest -rA--html="HTMLReportName.html"
 8.Run Using cd go to diiractory of file
  pytest test_Marker.py -rA
  test_Marker.py is file name
+
+8.Run Parametrize test case
+pytest test_parametrization.py -v
+or
+will give output
+pytest test_parametrization.py -rA
+
