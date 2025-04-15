@@ -1,0 +1,38 @@
+1. Execution Command of Pytest File Execute all tc in a class
+pytest PyTest/test_sample.py::TestExample
+
+test_sample.py-> File Name
+TestExample --> Class Name
+
+2. Execution Command of Pytest File Execute all tc in a class
+pytest -v PyTest/test_sample.py::TestExample
+
+test_sample.py –>>test file
+
+TestExample –>> class Name
+
+-v –>> verbose output (optional, but helpful)
+
+3.Run a single method from the class:
+pytest -v PyTest/test_sample.py::TestExample::test_case_two
+
+4. Run all test cases based on Marker using below command
+pytest -m sample -v
+
+5. Help to find all flags
+ pytest --help
+
+6. Generate Xml Report
+pytest -rA --junit-xml="Report.xml"
+
+7. Generate HTML Report
+pip install pytest-html
+project location install pytest-html
+Command to generate Repport-->>
+pytest --html="HTMLReportName.html"
+or
+pytest -rA--html="HTMLReportName.html"
+
+8.Run Using cd go to diiractory of file
+ pytest test_Marker.py -rA
+ test_Marker.py is file name
