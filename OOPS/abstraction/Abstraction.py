@@ -14,3 +14,7 @@ class B(A):
 
 ob = B()
 ob.display()
+
+# Can not instansiate a class
+#ob1 = A()
+#ob1.display()
